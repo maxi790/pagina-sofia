@@ -1,155 +1,248 @@
+/* styles.css */
 
+/* Global Styles */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
     color: #333;
-    background-color: #8e2121;
-     
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-    color: #337ab7;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin-bottom: 20px;
-  }
-  
-  ul {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+ul {
     list-style: none;
-    margin: 0;
     padding: 0;
-  }
-  
-  li {
+    margin: 0;
+}
+ 
+li {
     margin-bottom: 10px;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: #337ab7;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: #23527c;
-  }
-  
-  /* Header Styles */
-  
-  header {
-    background-color: #337ab7;
-    padding: 20px;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
     text-align: center;
-    color: #e8dfdf;
-  }
-  
-  header nav ul {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
     display: flex;
     justify-content: space-between;
-  }
-  
-  header nav li {
+}
+
+header nav li {
     margin-right: 20px;
-  }
-  
-  header nav a {
-    color: #eee4e4;
-    
-  }
-  
-  /* Main Styles */
-  
-  main {
+}
+
+header nav a {
+    color: #fff;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+/* Main Styles */
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-  }
-  
-  section {
+    padding: 2em;
+}
+
+section {
     background-color: #fff;
-    padding: 20px;
+    padding: 2em;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Services Styles */
-  
-  .services {
+}
+
+.services-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .service {
+}
+
+.services-list li {
     width: 30%;
     margin: 20px;
-    background-color: #e4d7d7;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-  }
-  
-  .service h2 {
-    margin-top: 0;
-  }
-  
-  /* Contact Styles */
-  
-  .contact {
-    background-color: #337ab7;
-    padding: 20px;
     text-align: center;
+}
+
+.services-list i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-list h3 {
+    margin-top: 0;
+}
+
+.services-list p {
+    margin-bottom: 20px;
+}
+
+.services-list .btn-more {
+    background-color: #337ab7;
     color: #fff;
-  }
-  
-  .contact form {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.services-list .btn-more:hover {
+    background-color: #23527c;
+}
+
+/* Team Styles */
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-list li {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-list img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-list h3 {
+    margin-top: 0;
+}
+
+.team-list p {
+    margin-bottom: 20px;
+}
+
+.team-list .btn-more {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.team-list .btn-more:hover {
+    background-color: #23527c;
+}
+
+/* Contact Styles */
+
+#contacto {
+    background-color: #f9f9f9;
+    padding: 2em;
+}
+
+#contacto h2 {
+    margin-top: 0;
+}
+
+#contacto p {
+    margin-bottom: 20px;
+}
+
+#contacto form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-  }
-  
-  .contact label {
+}
+
+#contacto label {
     margin-bottom: 10px;
-  }
-  
-  .contact input, .contact textarea {
+}
+
+#contacto input, #contacto textarea {
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-  }
-  
-  .contact input[type="submit"] {
-    background-color: #337ab7;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contact input[type="submit"]:hover {
-    background-color: #23527c;
-  }
-  
-  /* Footer Styles */
-  
-  footer {
-    background-color: #337ab7;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-  }
-     
+    border: 1px solid #ccc;
+}
 
+#contacto input[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contacto input[type="submit"]:hover {
+    background-color: #23527c;
+}
+/* styles.css */
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-image: linear-gradient(to bottom, #f9f9f9, #e5e5e5); /* Agregamos un fondo degradado */
+    background-size: 100% 300px; /* Establecemos el tamaño del fondo */
+    background-position: 0% 100%; /* Establecemos la posición del fondo */
+}
+
+
+/* Main Style */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-image: url(sofi.jpg); /* Agregamos una imagen de fondo para el main */
+    background-size: 20% 20%; /* Establecemos el tamaño del fondo */
+    background-position: center; /* Establecemos la posición del fondo */
+}
+
+/* Resto del CSS... */

@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,61 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios Odontológicos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Agregamos un favicon -->
 </head>
 <body>
-    <body background="sofi.jpg">
-        <!-- page content here -->
-      </body>
     <header>
-    
         <nav>
             <ul>
-                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-            
             </ul>
-              
         </nav>
     </header>
     <main>
-        <section id="nosotros">
-            <h1>Bienvenidos a nuestro consultorio odontológico</h1>
-            <p>Somos un equipo de profesionales dedicados a brindar atención odontológica de alta calidad a nuestros pacientes.</p>
-        </section>
         <section id="servicios">
-            <h1>Servicios Odontológicos</h1>
-            <ul>
+            <h2>Servicios Odontológicos</h2>
+            <ul class="services-list">
                 <li>
-                    <h2>Odontología General</h2>
-                    <p>Exámenes bucales, limpieza dental, tratamiento de caries, etc.</p>
+                    <i class="fas fa-tooth"></i>
+                    <h3>Limpieza Dental</h3>
+                    <p>Realizamos limpiezas dentales profundas y personalizadas para mantener tu sonrisa brillante.</p>
+                    <button class="btn-more">Ver más</button> <!-- Agregamos un botón para ver más información -->
                 </li>
                 <li>
-                    <h2>Odontología Estética</h2>
-                    <p>Blanqueamiento dental, carillas, coronas, etc.</p>
+                    <i class="fas fa-smile"></i>
+                    <h3>Blanqueamiento Dental</h3>
+                    <p>Te ofrecemos tratamientos de blanqueamiento dental para dejar tu sonrisa más radiante.</p>
+                    <button class="btn-more">Ver más</button>
                 </li>
                 <li>
-                    <h2>Implantes Dentales</h2>
-                    <p>Implantes dentales, prótesis, etc.</p>
+                    <i class="fas fa-dental"></i>
+                    <h3>Ortodoncia</h3>
+                    <p>Nuestros especialistas en ortodoncia te ayudarán a lograr una sonrisa perfecta.</p>
+                    <button class="btn-more">Ver más</button>
+                </li>
+            </ul>
+        </section>
+        <section id="equipo">
+            <h2>Nuestro Equipo</h2>
+            <ul class="team-list">
+                <li>
+                    <img src="dr-smith.jpg" alt="Dr. Smith">
+                    <h3>Dr. Smith</h3>
+                    <p>Especialista en odontología general y cosmética.</p>
+                    <button class="btn-more">Ver más</button>
+                </li>
+                <li>
+                    <img src="dr-jones.jpg" alt="Dr. Jones">
+                    <h3>Dr. Jones</h3>
+                    <p>Especialista en ortodoncia y odontología pediátrica.</p>
+                    <button class="btn-more">Ver más</button>
                 </li>
             </ul>
         </section>
         <section id="contacto">
-            <h1>Contáctanos</h1>
-            <p>Puedes contactarnos a través de nuestro formulario de contacto o llamándonos al (123) 456-7890.</p>
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través de nuestro formulario de contacto o llamándonos al 555-555-5555.</p>
             <form>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"><br><br>
+                <input type="text" id="nombre" name="nombre" required> <!-- Agregamos el atributo required para validar el campo -->
+                <br><br>
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea><br><br>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <br><br>
                 <input type="submit" value="Enviar">
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Consultorio Odontológico</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
