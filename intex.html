@@ -1,82 +1,96 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios Odontológicos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png"> <!-- Agregamos un favicon -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr.catena  Odontólogo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="Dra. catena - Odontóloga especializada en [especialidad]. Ofrece tratamientos de alta calidad en [ubicación].">
+  <meta name="keywords" content="odontólogo, [especialidad], [ubicación], tratamiento dental, salud bucal">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="servicios">
-            <h2>Servicios Odontológicos</h2>
-            <ul class="services-list">
-                <li>
-                    <i class="fas fa-tooth"></i>
-                    <h3>Limpieza Dental</h3>
-                    <p>Realizamos limpiezas dentales profundas y personalizadas para mantener tu sonrisa brillante.</p>
-                    <button class="btn-more">Ver más</button> <!-- Agregamos un botón para ver más información -->
-                </li>
-                <li>
-                    <i class="fas fa-smile"></i>
-                    <h3>Blanqueamiento Dental</h3>
-                    <p>Te ofrecemos tratamientos de blanqueamiento dental para dejar tu sonrisa más radiante.</p>
-                    <button class="btn-more">Ver más</button>
-                </li>
-                <li>
-                    <i class="fas fa-dental"></i>
-                    <h3>Ortodoncia</h3>
-                    <p>Nuestros especialistas en ortodoncia te ayudarán a lograr una sonrisa perfecta.</p>
-                    <button class="btn-more">Ver más</button>
-                </li>
-            </ul>
-        </section>
-        <section id="equipo">
-            <h2>Nuestro Equipo</h2>
-            <ul class="team-list">
-                <li>
-                    <img src="dr-smith.jpg" alt="Dr. Smith">
-                    <h3>Dr. Smith</h3>
-                    <p>Especialista en odontología general y cosmética.</p>
-                    <button class="btn-more">Ver más</button>
-                </li>
-                <li>
-                    <img src="dr-jones.jpg" alt="Dr. Jones">
-                    <h3>Dr. Jones</h3>
-                    <p>Especialista en ortodoncia y odontología pediátrica.</p>
-                    <button class="btn-more">Ver más</button>
-                </li>
-            </ul>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Puedes contactarnos a través de nuestro formulario de contacto o llamándonos al 555-555-5555.</p>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required> <!-- Agregamos el atributo required para validar el campo -->
-                <br><br>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
-    <script src="script.js"></script>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Acerca  mí</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-container">
+    <h1>Dr. sofia - Odontólogo</h1>
+    <p>Mejora tu salud bucal con nuestros tratamientos de alta calidad</p>
+    <button>Agenda una cita</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Acerca de mí</h2>
+    <img src="dr-[apellido].jpg" alt="Dr. [Apellido]" loading="lazy">
+    <p>Soy Dr. [Apellido], odontólogo con [número] años de experiencia en el cuidado de la salud bucal. Me especializo en [especialidad] y me comprometo a brindarle a mis pacientes la atención personalizada y de alta calidad que merecen.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>
+        <i class="fas fa-tooth"></i>
+        <h3>Limpieza dental</h3>
+        <p>Una limpieza dental profesional para mantener su boca saludable y fresca.</p>
+      </li>
+      <li>
+        <i class="fas fa-fill"></i>
+        <h3>Restauraciones</h3>
+        <p>Restauraciones dentales de alta calidad para devolverle la confianza en su sonrisa.</p>
+      </li>
+      <li>
+        <i class="fas fa-whitening"></i>
+        <h3>Blanqueamiento dental</h3>
+        <p>Blanqueamiento dental profesional para dejar su sonrisa radiante y brillante.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Testimonios</h2>
+    <ul>
+      <li>
+        <p>"Dr. [Apellido] es un profesional excelente. Me hizo sentir cómodo y seguro durante todo el proceso."</p>
+        <p>- [Nombre del paciente]</p>
+      </li>
+      <li>
+        <p>"La atención de Dr. [Apellido] es de alta calidad. Me recomiendo a todos mis amigos y familiares."</p>
+        <p>- [Nombre del paciente]</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Agenda una cita</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Teléfono" required>
+      <textarea placeholder="Mensaje"></textarea>
+      <button>Enviar</button>
+    </form>
+    <p>Ubicación: [Dirección]</p>
+    <p>Teléfono: [Teléfono]</p>
+    <p>Correo electrónico: [Correo electrónico]</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Dr. [Apellido] - Odontólogo</p>
+  </footer>
 </body>
 </html>
